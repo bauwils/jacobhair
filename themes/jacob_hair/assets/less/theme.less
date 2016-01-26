@@ -1,0 +1,103 @@
+//
+// Boot variables and mixins
+//
+
+@import "theme/boot";
+
+//
+// Vendor and Fonts
+//
+
+@import "theme/vendor";
+@import "theme/fonts";
+@import "theme/type";
+@import "theme/resets";
+@import "header";
+@import "banner-box";
+@import "about";
+
+.nav.navbar-nav {
+	// background-color: @colour-primary;
+
+}
+
+.pricing-bg-img{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background-image: url("/themes/jacob_hair/assets/img/pricing-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	.opacity(0.1);
+}
+
+
+
+.pricing{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px 50px 100px;
+	color: white;
+	#gradient .directional(@colour-primary; @colour-secondary; @deg: 45deg);
+	@media (max-width: @screen-sm-max) {
+		padding: 40px 60px 40px 60px;
+	}
+
+	@media (max-width: @screen-xs-max) {
+		padding: 20px;
+	}
+	
+}
+
+.pricing-hr{
+	width: 100%;
+	border-top: 1px solid white;
+	margin: -10px 0px 20px 0;
+}
+
+.pricing-row {
+	@padding: 50px;
+	.make-row(@padding);
+
+	.pricing-column {
+		.make-xs-column(12; @padding);
+		.make-sm-column(6; @padding);
+	}
+}
+
+.pricing-column ul{
+	padding-left: 0;
+	}
+
+.pricing-ul li{
+	.clearfix;
+}
+
+.pricing-column li{
+	padding: 5px 5px 5px 5px;
+	cursor: pointer;
+	&:hover {
+		@media (min-width: @screen-md-min) {
+		background-color: lighten(@colour-secondary, 5%);
+		}
+	}
+}
+
+
+
+.pricing-service,
+.pricing-charge{
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+.pricing-service{
+	width: 70%;
+	float: left;
+
+}
+
+.pricing-charge{
+	text-align: right;
+}

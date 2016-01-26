@@ -1,0 +1,30 @@
+//
+// Mixins file
+//
+// Space for any custom mixins used by this application
+//
+
+/**
+ * Create absolute positioned element
+ * that fills its parents
+ */
+.absolute-fill() 
+{
+    position: absolute;
+    width: 100%; height: 100%;
+}
+
+// Universal transform
+// --------------------------------------------------
+.transform(@transform) 
+{
+  -webkit-transform: @transform;
+      -ms-transform: @transform; // IE9+
+          transform: @transform;
+}
+
+.borderRadius(@radius) 
+{
+            border-radius: 50%;
+    -webkit-border-radius: 50%;
+}

@@ -1,0 +1,43 @@
+.navbar-absolute {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	padding-top: 20px;
+	float: none;
+	top: 0;
+    left: 0%;
+    //transform: translate(-50%,0);
+	
+	> li {
+		float: none;
+		padding: 20px 40px 20px 40px;
+		display: inline-block;
+
+		> a {
+			padding: 0;
+			padding-left: 5px;
+			.text-nav;
+		}
+
+		> a {
+			color: white;
+			border-bottom: 3px solid transparent;
+			transition: color 200ms ease, border 200ms ease;
+		}
+		> a:hover{
+			color: @colour-secondary;
+			border-bottom: 3px solid @colour-secondary;
+		}
+
+	}
+}
+
+.navbar-gradient{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	top: 0;
+	left: 0;
+#gradient .vertical(@start-color: fade(#000000, 50%); @end-color: fade(#000000,0%); @start-percent: 0%; @end-percent: 100%);
+
+}

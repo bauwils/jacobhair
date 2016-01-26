@@ -1,0 +1,94 @@
+.homebanner{
+	background-image: url("/themes/jacob_hair/assets/img/home-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+
+
+.homebanner-box{
+	#gradient .directional( fade(@colour-primary, 70%); fade(@colour-secondary, 70%); @deg: 45deg);
+		height: 100%;
+		width: 100%;
+		max-width: none;
+	@media (max-width: @screen-xs-max) {
+		font-size: 12px;
+
+	}
+	@media (min-width: @screen-sm-min) {
+		@box-width: 400px;
+		@box-height: 500px;
+	    @box-width-center-offset: (0px - (@box-width / 2));
+	    @box-height-center-offset: (0px - (@box-height / 2));
+	    position: absolute;
+	    top: 50%; left: 50%;
+	    max-width: @box-width; height: @box-height;
+	    margin-left: @box-width-center-offset; margin-top: @box-height-center-offset;
+	}
+
+}
+
+
+.banner-logo{
+	display: block; 
+	max-width: 150px;
+	padding-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	@media (max-width: @screen-xs-max) {
+	padding-top: 70px;
+	padding-bottom: 0px;
+	}
+	
+}
+
+.banner-box-hr{
+	width: 40%;
+	border-top: 2px solid white;
+	margin-top: 30px;
+
+}
+
+
+.banner-title{
+	text-align: center;
+	color: white;
+	padding: 20px;
+	line-height: 38px;
+	margin-bottom: 0;
+	margin-top: 0;
+	@media (max-width: @screen-xs-max) {
+		line-height: 30px;
+	}
+
+}
+
+.banner-body{
+	text-align: center;
+	color:white;
+	padding: 0 20px 20px 20px;
+
+}
+
+.button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	max-width: 200px;
+	height: 40px;
+	border: 2px solid white;
+
+}
+
+.button:focus{
+	text-decoration: none;
+	color: white;
+}
+
+a.button:hover{
+	background-color: white;
+	color: @colour-primary;
+
+}
