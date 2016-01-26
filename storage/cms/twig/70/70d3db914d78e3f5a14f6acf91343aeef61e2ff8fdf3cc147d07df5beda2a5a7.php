@@ -73,6 +73,13 @@ class __TwigTemplate_2995a87221b5c7e3154cbcc4de1585273c3c0273bf45bce75b347cd2dd8
         unset($context['__cms_partial_params']);
         // line 37
         echo "
+\t\t";
+        // line 38
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("home/contact"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
+        // line 39
+        echo "
 \t\t<section class=\"footer\">
 \t\t\t
 \t\t</section>
@@ -96,7 +103,7 @@ class __TwigTemplate_2995a87221b5c7e3154cbcc4de1585273c3c0273bf45bce75b347cd2dd8
 
     public function getDebugInfo()
     {
-        return array (  75 => 37,  71 => 36,  68 => 35,  64 => 34,  61 => 33,  57 => 32,  54 => 31,  50 => 30,  19 => 1,);
+        return array (  82 => 39,  78 => 38,  75 => 37,  71 => 36,  68 => 35,  64 => 34,  61 => 33,  57 => 32,  54 => 31,  50 => 30,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -135,6 +142,8 @@ class __TwigTemplate_2995a87221b5c7e3154cbcc4de1585273c3c0273bf45bce75b347cd2dd8
 /* 		{% partial 'home/pricing' %}*/
 /* */
 /* 		{% partial 'home/tile' %}*/
+/* */
+/* 		{% partial 'home/contact' %}*/
 /* */
 /* 		<section class="footer">*/
 /* 			*/
