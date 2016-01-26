@@ -1,4 +1,4 @@
-1453797535s:2633:"a:6:{s:5:"mtime";i:1453796933;s:7:"content";s:1240:"==
+1453807723s:2697:"a:6:{s:5:"mtime";i:1453806841;s:7:"content";s:1272:"==
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +36,8 @@
 
 		{% partial 'home/tile' %}
 
+		{% partial 'home/contact' %}
+
 		<section class="footer">
 			
 		</section>
@@ -44,7 +46,7 @@
 
 	<script src="http://localhost:35729/livereload.js"></script>
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1237:"<!DOCTYPE html>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1269:"<!DOCTYPE html>
 <html>
 <head>
 	<title>Jacob's Hair</title>
@@ -80,6 +82,8 @@
 		{% partial 'home/pricing' %}
 
 		{% partial 'home/tile' %}
+
+		{% partial 'home/contact' %}
 
 		<section class="footer">
 			
