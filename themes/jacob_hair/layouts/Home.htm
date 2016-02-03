@@ -1,4 +1,12 @@
 ==
+<?php
+use Jofry\Fields\PageFields;
+function onStart()
+{
+    PageFields::instance()->addValuesToPage($this);
+}
+?>
+==
 <!DOCTYPE html>
 <html>
 <head>

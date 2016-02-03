@@ -1,0 +1,25 @@
+sliders:
+    1:
+        title: '12312'
+        subtitle: '123123'
+    2:
+        title: '123123'
+        subtitle: '123'
+haircut_tiles:
+    1:
+        photo: /photo-1423001474131-3a304c588136.jpeg
+        title: 'Haircut One'
+        description: 'Haircut One'
+    2:
+        photo: /photo-1445281835511-e2dd35fb0142.jpeg
+        title: 'Haircut Two'
+        description: 'Haircut Two'
+product_tiles:
+    1:
+        photo: /photo-1445451983996-ac6b92ffb1fb.jpeg
+        title: 'Product One'
+        description: 'Product One'
+    2:
+        photo: /photo-1452251889946-8ff5ea7b27ab.jpeg
+        title: 'Product Two'
+        description: 'Product Two'

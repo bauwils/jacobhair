@@ -1,5 +1,11 @@
 <?php 
-class Cms56b1dcd1883f0_1690552097Class extends \Cms\Classes\LayoutCode
+use Jofry\Fields\PageFields;
+class Cms56b1e95c8d597_245981144Class extends \Cms\Classes\LayoutCode
 {
+
+public function onStart()
+{
+    PageFields::instance()->addValuesToPage($this);
+}
 
 }
