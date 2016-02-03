@@ -22,6 +22,10 @@ class __TwigTemplate_182b1158ca7f05853395cbeca930dbd82eee75b6829dc6ed17f9431230e
 \t\t\t\t
 
 \t\t\t\t<div class=\"info\">
+\t\t\t\t\t<h3>Jacob's Hair & Beauty</h3>
+\t\t\t\t\t<P>304 Blackburn Rd, Burwood East VIC 3151, Australia</P>
+\t\t\t\t\t<span Class=\"trading-hour\">MON - FRI</span> 9am - 9pm
+
 \t\t\t\t\t
 \t\t\t\t</div>
 
@@ -50,6 +54,10 @@ class __TwigTemplate_182b1158ca7f05853395cbeca930dbd82eee75b6829dc6ed17f9431230e
 /* 				*/
 /* */
 /* 				<div class="info">*/
+/* 					<h3>Jacob's Hair & Beauty</h3>*/
+/* 					<P>304 Blackburn Rd, Burwood East VIC 3151, Australia</P>*/
+/* 					<span Class="trading-hour">MON - FRI</span> 9am - 9pm*/
+/* */
 /* 					*/
 /* 				</div>*/
 /* */
