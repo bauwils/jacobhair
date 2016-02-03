@@ -1,37 +1,93 @@
-1454500283s:852:"a:6:{s:5:"mtime";i:1454499613;s:7:"content";s:350:"		<section id="contact" class="contact">
+1454504320s:3300:"a:6:{s:5:"mtime";i:1454503717;s:7:"content";s:1573:"		<section id="contact" class="contact">
 		
 			<div class="contact-box">
 				
 
 				<div class="info">
 					<h3>Jacob's Hair & Beauty</h3>
-					<P>304 Blackburn Rd, Burwood East VIC 3151, Australia</P>
-					<span Class="trading-hour">MON - FRI</span> 9am - 9pm
-
+					<p>304 Blackburn Rd, Burwood East VIC 3151, Australia</p>
+					<span class="trading-hour">MON - FRI</span> 9am - 9pm
+					<p>0413 130 123</p>
+					<p>Info@jacobshair.com.au</p>
 					
 				</div>
 
 				<div class="form">
-					
+					<h3>Enquiry</h3>
+
+					<!-- testing -->
+
+					<span class="input input--kohana">
+						<input class="input__field input__field--kohana" type="text" id="input-29" />
+						<label class="input__label input__label--kohana" for="input-29">
+							<i class="fa fa-fw fa-clock-o icon icon--kohana"></i>
+							<span class="input__label-content input__label-content--kohana">Time</span>
+						</label>
+					</span>
+					<span class="input input--kohana">
+						<input class="input__field input__field--kohana" type="text" id="input-30" />
+						<label class="input__label input__label--kohana" for="input-30">
+							<i class="fa fa-fw fa-bus icon icon--kohana"></i>
+							<span class="input__label-content input__label-content--kohana">Line</span>
+						</label>
+					</span>
+					<span class="input input--kohana">
+						<input class="input__field input__field--kohana" type="text" id="input-31" />
+						<label class="input__label input__label--kohana" for="input-31">
+							<i class="fa fa-fw fa-phone icon icon--kohana"></i>
+							<span class="input__label-content input__label-content--kohana">Phone</span>
+						</label>
+					</span>
+
+					<!-- testing end -->
+
 				</div>
 				
 			</div>
 			
-		</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:348:"<section id="contact" class="contact">
+		</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1571:"<section id="contact" class="contact">
 		
 			<div class="contact-box">
 				
 
 				<div class="info">
 					<h3>Jacob's Hair & Beauty</h3>
-					<P>304 Blackburn Rd, Burwood East VIC 3151, Australia</P>
-					<span Class="trading-hour">MON - FRI</span> 9am - 9pm
-
+					<p>304 Blackburn Rd, Burwood East VIC 3151, Australia</p>
+					<span class="trading-hour">MON - FRI</span> 9am - 9pm
+					<p>0413 130 123</p>
+					<p>Info@jacobshair.com.au</p>
 					
 				</div>
 
 				<div class="form">
-					
+					<h3>Enquiry</h3>
+
+					<!-- testing -->
+
+					<span class="input input--kohana">
+						<input class="input__field input__field--kohana" type="text" id="input-29" />
+						<label class="input__label input__label--kohana" for="input-29">
+							<i class="fa fa-fw fa-clock-o icon icon--kohana"></i>
+							<span class="input__label-content input__label-content--kohana">Time</span>
+						</label>
+					</span>
+					<span class="input input--kohana">
+						<input class="input__field input__field--kohana" type="text" id="input-30" />
+						<label class="input__label input__label--kohana" for="input-30">
+							<i class="fa fa-fw fa-bus icon icon--kohana"></i>
+							<span class="input__label-content input__label-content--kohana">Line</span>
+						</label>
+					</span>
+					<span class="input input--kohana">
+						<input class="input__field input__field--kohana" type="text" id="input-31" />
+						<label class="input__label input__label--kohana" for="input-31">
+							<i class="fa fa-fw fa-phone icon icon--kohana"></i>
+							<span class="input__label-content input__label-content--kohana">Phone</span>
+						</label>
+					</span>
+
+					<!-- testing end -->
+
 				</div>
 				
 			</div>
