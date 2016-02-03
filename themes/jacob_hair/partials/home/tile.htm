@@ -1,64 +1,12 @@
 <section id="portfolio">
 	<div class="tiles">
+		{% for tile in tiles %}
 		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
+			<div class="tile-content" style="background-image: url('{{ tile.photo|media }}')">
 				
 			</div>
 			<div class="square-maker"></div>
 		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
-		<div class="tile">
-			<div class="tile-content" style="background-image: url('http://placehold.it/240x240')">
-				
-			</div>
-			<div class="square-maker"></div>
-		</div>
+		{% endfor %}
 	</div>
 </section>
