@@ -1,0 +1,60 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    sliders:
+        label: Sliders
+        type: repeater
+        tab: Top Slider
+        form:
+            fields:
+                title:
+                    label: Title
+                    type: text
+                    span: auto
+                subtitle:
+                    label: Subtitle
+                    type: text
+                    span: auto
+    haircut_tiles:
+        label: Haircut Tiles
+        type: repeater
+        tab: Haircut Tiles
+        form:
+            fields:
+                photo:
+                    label: Photo
+                    type: mediafinder
+                    width: 240
+                    height: 240
+                    span: auto
+                title:
+                    label: Title
+                    type: text
+                    span: auto
+                description:
+                    label: Description
+                    type: textarea
+                    size: small
+    product_tiles:
+        label: Product Tiles
+        type: repeater
+        tab: Product Tiles
+        form:
+            fields:
+                photo:
+                    label: Photo
+                    type: mediafinder
+                    width: 240
+                    height: 240
+                    span: auto
+                title:
+                    label: Title
+                    type: text
+                    span: auto
+                description:
+                    label: Description
+                    type: textarea
+                    size: small
+
