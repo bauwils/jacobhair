@@ -16,6 +16,11 @@
             "role": "Co-founder"
         }
     ],
+    "autoload": {
+        "psr-4" : {
+            "App\\" : "app/"
+        }
+    },
     "support": {
         "issues": "https://github.com/octobercms/october/issues",
         "forum": "http://octobercms.com/forum/",
