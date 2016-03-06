@@ -4,7 +4,7 @@
 	</div>
 
 	<h1>
-		Our Pricing
+		{{ this.page.pricing_title }}
 	</h1>
 
 	<p>
@@ -17,6 +17,28 @@
 		<div class="pricing-column">
 
 		<!-- Man's Cut -->
+		{% for priceTable in this.page.pricing_table %}
+		    
+			<h2>
+				{{priceTable.heading}}	
+			</h2>
+
+			<hr class="pricing-hr">
+
+			<ul class="pricing-ul" style="list-style-type: none;">
+				{% for priceRow in priceTable.pricing_box %}
+				<li>
+					<div class="pricing-service">
+						{{ priceRow.price_label }}
+					</div>
+					<div class="pricing-charge">
+						{{ priceRow.price_amount }}
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+
+		{% endfor %}
 
 			<h2>
 				Man's cut

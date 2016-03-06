@@ -35,10 +35,16 @@
 .pricing-row {
 	@padding: 50px;
 	.make-row(@padding);
+	//margin-left: 0; margin-right: 0;
 
 	.pricing-column {
-		.make-xs-column(12; @padding);
 		.make-sm-column(6; @padding);
+	}
+	@media (max-width: @screen-xs-max) {
+		margin-left: 0; margin-right: 0;
+		.pricing-column {
+			padding-left: 0; padding-right: 0;
+		}
 	}
 }
 

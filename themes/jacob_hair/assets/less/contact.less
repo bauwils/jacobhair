@@ -1,0 +1,154 @@
+.contact{
+	position: relative;
+	top: 0; left: 0;
+	width: auto; height: 500px;
+	background-image: url("/themes/jacob_hair/assets/img/jacob-map.png");
+	background-size: cover;
+	background-position: center;
+	//background-color: @colour;
+	@media (max-width: @screen-xs-max) {
+		height: auto;
+	}
+
+}
+
+.contact-box{
+	position: absolute;
+	width: 500px; height: 360px;
+	top: 15%; right: 10%;
+	background-color: white;
+	@media (max-width: @screen-sm-max) {
+		right: 50%;
+		margin-right: -250px;
+	}
+	@media (max-width: @screen-xs-max) {
+		position: relative;
+		top: 0px; right: 0px;
+		margin-right: 0px;
+		width: auto; height: auto;
+	}
+
+}
+
+.map-link a{
+	text-decoation: none;
+	&:hover{
+		color: @colour-primary;
+		text-decoration: underline;
+	}
+}
+
+.info{
+	width: 50%; height: 100%;
+	top: 0; left: 0;
+	padding: 20px;
+	color: @colour-primary;
+	border-right: 1px solid #e8e8e8;
+	@media (max-width: @screen-xs-max) {
+		width: 100%; height: auto;
+		padding-bottom: 50px;
+
+	}
+	
+
+	//background-color: pink;
+}
+
+.trading-hour{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.contact-icons{
+	position: relative;
+	top: -2px;
+	font-size: 1.8em;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.social{
+	color: @colour-primary;
+	font-size: 1.2em;
+
+}
+
+.social-circle{
+	float: left;
+}
+
+.social-circle a{
+	display: inline-block;
+	width: 43px; height: 43px;
+	border: 2px solid @colour-primary;
+	border-radius: 50%;
+	margin: 5px;
+	padding-top: 10px;
+	text-align: center;
+
+	&:hover, &:focus{
+		text-decoration: none;
+		background-color: @colour-primary;
+		.social{
+			color: white;
+		}
+	}
+
+}
+
+
+
+.form-enquire{
+	position: absolute;
+	width: 50%; height: 100%;
+	top: 0; right: 0;
+	padding: 20px;
+	color: @colour-primary;
+	@media (max-width: @screen-xs-max) {
+		position: relative;
+		width: auto; height: auto;
+	}
+
+	//background-color: pink;
+}
+
+//testing below
+
+.form-group{
+	margin-bottom: 10px;
+}
+
+
+.form-control{
+	box-shadow: none;
+	border-radius: 0px;
+	border-color: #ffffff;
+	background-color: rgba(117, 37, 112, 0.1);
+	&:focus{
+		border-color: @colour-primary;
+	}
+
+}
+
+.btn-sm{
+	background-color: transparent;
+	border: 2px solid @colour-primary;
+	border-radius: 0px;
+	&:hover{
+		background-color: @colour-primary;
+		color: white;
+	}
+	@media (max-width: @screen-xs-max) {
+		display: block;
+		width: 100%;
+		padding-top: 10px; padding-bottom: 10px;
+	}
+}
+
+textarea.comment{
+	resize: none;
+}
+
+
+
+//testing end

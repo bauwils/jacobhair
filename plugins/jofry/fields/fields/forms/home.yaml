@@ -17,6 +17,37 @@ fields:
                     label: Subtitle
                     type: text
                     span: auto
+    pricing_title:
+        label: Pricing Title
+        tab: Pricing
+    pricing_desc:
+        label: Pricing Description
+        tab: Pricing
+    pricing_table:
+        label: Pricing
+        tab: Pricing
+        type: repeater
+        form:
+            fields:
+                heading:
+                    type: text
+                    label: Heading
+                    span: auto
+                pricing_box:
+                    label: Pricing Box
+                    type: repeater
+                    span: auto
+                    form:
+                        fields:
+                            price_label:
+                                type: text
+                                label: Label
+                                span: auto
+                            price_amount:
+                                type: text
+                                label: Cost
+                                span: auto
+
     haircut_tiles:
         label: Haircut Tiles
         type: repeater

@@ -1,0 +1,12 @@
+pricing_title: 'Our Pricing IS SO LOW'
+pricing_desc: 'Some description'
+pricing_table:
+    1:
+        heading: 'Man''s Cut'
+        pricing_box:
+            1:
+                price_label: 'Standard Cut (Inc. Shampoo)'
+                price_amount: 'From $30'
+            2:
+                price_label: 'BUZZ CUT ONLY'
+                price_amount: 'FROM $18'

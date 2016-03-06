@@ -1,4 +1,4 @@
-1454504320s:2925:"a:6:{s:5:"mtime";i:1454500171;s:7:"content";s:1388:"==
+1457263504s:3545:"a:6:{s:5:"mtime";i:1457262896;s:7:"content";s:1698:"==
 <?php
 use Jofry\Fields\PageFields;
 function onStart()
@@ -12,6 +12,7 @@ function onStart()
 <head>
 	<title>Jacob's Hair</title>
 	<link rel="stylesheet" href="/themes/jacob_hair/assets/css/vendor.min.css">
+	<link rel="stylesheet" href="/themes/jacob_hair/assets/css/style.css">
 	<link rel="stylesheet" href="/themes/jacob_hair/assets/css/main.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -28,14 +29,14 @@ function onStart()
 		        <li><a href="#about">about</a></li>
 		        <li><a href="#pricing">pricing</a></li>
 		        <li><a href="#portfolio">portfolio</a></li>
-		        <li><a href="#">contact</a></li>
+		        <li><a href="#contact">contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</header>
 	<main>
-	
+
 		{% partial 'home/banner' %}
 
 		{% partial 'home/about' %}
@@ -47,7 +48,13 @@ function onStart()
 		{% partial 'home/contact' %}
 
 		<section class="footer">
-			
+			<div class="footer-left">
+				<p>© Jacob's Hair & Beauty 2016 All rights reserved</p>
+			</div>
+
+			<div class="footer-right">
+				<p><a href="http://www.bauwilsdesign.com" target="_blank">Design by bauwils - BANG</a></p>
+			</div>
 		</section>
 
 	</main>
@@ -60,11 +67,12 @@ function onStart()
 {
     PageFields::instance()->addValuesToPage($this);
 }
-";s:6:"markup";s:1269:"<!DOCTYPE html>
+";s:6:"markup";s:1579:"<!DOCTYPE html>
 <html>
 <head>
 	<title>Jacob's Hair</title>
 	<link rel="stylesheet" href="/themes/jacob_hair/assets/css/vendor.min.css">
+	<link rel="stylesheet" href="/themes/jacob_hair/assets/css/style.css">
 	<link rel="stylesheet" href="/themes/jacob_hair/assets/css/main.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -81,14 +89,14 @@ function onStart()
 		        <li><a href="#about">about</a></li>
 		        <li><a href="#pricing">pricing</a></li>
 		        <li><a href="#portfolio">portfolio</a></li>
-		        <li><a href="#">contact</a></li>
+		        <li><a href="#contact">contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</header>
 	<main>
-	
+
 		{% partial 'home/banner' %}
 
 		{% partial 'home/about' %}
@@ -100,7 +108,13 @@ function onStart()
 		{% partial 'home/contact' %}
 
 		<section class="footer">
-			
+			<div class="footer-left">
+				<p>© Jacob's Hair & Beauty 2016 All rights reserved</p>
+			</div>
+
+			<div class="footer-right">
+				<p><a href="http://www.bauwilsdesign.com" target="_blank">Design by bauwils - BANG</a></p>
+			</div>
 		</section>
 
 	</main>

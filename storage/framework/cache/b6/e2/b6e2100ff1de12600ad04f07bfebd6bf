@@ -1,10 +1,10 @@
-1454504320s:15642:"a:6:{s:5:"mtime";i:1453781894;s:7:"content";s:7743:"<section id="pricing" class="pricing">
+1457263673s:16596:"a:6:{s:5:"mtime";i:1457263071;s:7:"content";s:8220:"<section id="pricing" class="pricing">
 	<div class="pricing-bg-img">
 		
 	</div>
 
 	<h1>
-		Our Pricing
+		{{ this.page.pricing_title }}
 	</h1>
 
 	<p>
@@ -17,6 +17,28 @@
 		<div class="pricing-column">
 
 		<!-- Man's Cut -->
+		{% for priceTable in this.page.pricing_table %}
+		    
+			<h2>
+				{{priceTable.heading}}	
+			</h2>
+
+			<hr class="pricing-hr">
+
+			<ul class="pricing-ul" style="list-style-type: none;">
+				{% for priceRow in priceTable.pricing_box %}
+				<li>
+					<div class="pricing-service">
+						{{ priceRow.price_label }}
+					</div>
+					<div class="pricing-charge">
+						{{ priceRow.price_amount }}
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+
+		{% endfor %}
 
 			<h2>
 				Man's cut
@@ -440,13 +462,13 @@
 
 	</div>
 
-</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:7743:"<section id="pricing" class="pricing">
+</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:8220:"<section id="pricing" class="pricing">
 	<div class="pricing-bg-img">
 		
 	</div>
 
 	<h1>
-		Our Pricing
+		{{ this.page.pricing_title }}
 	</h1>
 
 	<p>
@@ -459,6 +481,28 @@
 		<div class="pricing-column">
 
 		<!-- Man's Cut -->
+		{% for priceTable in this.page.pricing_table %}
+		    
+			<h2>
+				{{priceTable.heading}}	
+			</h2>
+
+			<hr class="pricing-hr">
+
+			<ul class="pricing-ul" style="list-style-type: none;">
+				{% for priceRow in priceTable.pricing_box %}
+				<li>
+					<div class="pricing-service">
+						{{ priceRow.price_label }}
+					</div>
+					<div class="pricing-charge">
+						{{ priceRow.price_amount }}
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+
+		{% endfor %}
 
 			<h2>
 				Man's cut

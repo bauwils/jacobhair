@@ -62,6 +62,10 @@ class Auth extends Controller
 
     public function signin_onSubmit()
     {
+        // $user = User::find(1);
+        // \BackendAuth::login($user);
+        // // dd($user->toArray());
+        // return Backend::redirectIntended('backend');
         $rules = [
             'login'    => 'required|min:2|max:32',
             'password' => 'required|min:4'

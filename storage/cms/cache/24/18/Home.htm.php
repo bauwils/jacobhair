@@ -1,6 +1,6 @@
 <?php 
 use Jofry\Fields\PageFields;
-class Cms56b1e95c8d597_245981144Class extends \Cms\Classes\LayoutCode
+class Cms56dc11380ef03_4001174909Class extends \Cms\Classes\LayoutCode
 {
 
 public function onStart()

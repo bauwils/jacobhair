@@ -1,7 +1,9 @@
 .about{
 	background-color: @colour-primary;
 
-
+	&.row {
+		margin-left: 0; margin-right: 0;
+	}
 }
 
 .profile-img, 
@@ -14,7 +16,6 @@
 }
 
 .profile-img{
-	float: left;
 	background-image: url("../img/profile.jpg");
 	background-size: cover;
 	background-position: center;
@@ -27,18 +28,20 @@
 }
 
 .about-content{
-	float: right;
 	color: white;
 	#gradient .directional(@colour-primary; @colour-secondary; @deg: 45deg)
 
 }
 
 .content-text{
-	margin: 50px 50px 20px 60px;
-	@media (max-width: @screen-xs-max) {
-		margin: 60px 20px 20px 20px;
+	padding: 50px 50px 20px 60px;
+	h1 {
+		margin-top: 0;
 	}
 
+	@media (max-width: @screen-xs-max) {
+		padding: 60px 20px 20px 20px;
+	}
 }
 
 .content-qualification {

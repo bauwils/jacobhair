@@ -1,7 +1,7 @@
-1454504320s:4784:"a:6:{s:5:"mtime";i:1453781760;s:7:"content";s:2314:"<section id="about" class="about row">
-			<div class="profile-img col-md-6">
-			
-			</div>
+1457263435s:4772:"a:6:{s:5:"mtime";i:1457261254;s:7:"content";s:2308:"<section id="about" class="about row">
+	<div class="profile-img col-md-6">
+	
+	</div>
 	<div class="about-content col-md-6">
 		<div class="content-text">
 			<h1>
@@ -102,10 +102,10 @@
 
 		</div>	
 	</div>
-</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2314:"<section id="about" class="about row">
-			<div class="profile-img col-md-6">
-			
-			</div>
+</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2308:"<section id="about" class="about row">
+	<div class="profile-img col-md-6">
+	
+	</div>
 	<div class="about-content col-md-6">
 		<div class="content-text">
 			<h1>
