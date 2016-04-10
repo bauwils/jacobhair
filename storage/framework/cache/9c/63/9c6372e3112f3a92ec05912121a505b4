@@ -1,4 +1,4 @@
-1457263435s:1238:"a:6:{s:5:"mtime";i:1453781682;s:7:"content";s:542:"<section class="homebanner">
+1457856168s:1274:"a:6:{s:5:"mtime";i:1457855561;s:7:"content";s:560:"<section class="homebanner">
 	<div class="homebanner-box">
 
 		<a class="banner-logo" href="#"><img src="/themes/jacob_hair/assets/img/logo.png" alt="Jacob's hair & beauty"></a>
@@ -12,12 +12,12 @@
 			Whether you are looking for a cut, colour or treatment, at Jacob's Hair Salon you will receive the highest quality service at great prices.
 		</p>
 		
-		<a href="#" class="button">Book now</a>
+		<a href="#" class="button js-trigger-timely">Book now</a>
 	
 	</div>
 
 
-</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:542:"<section class="homebanner">
+</section>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:560:"<section class="homebanner">
 	<div class="homebanner-box">
 
 		<a class="banner-logo" href="#"><img src="/themes/jacob_hair/assets/img/logo.png" alt="Jacob's hair & beauty"></a>
@@ -31,7 +31,7 @@
 			Whether you are looking for a cut, colour or treatment, at Jacob's Hair Salon you will receive the highest quality service at great prices.
 		</p>
 		
-		<a href="#" class="button">Book now</a>
+		<a href="#" class="button js-trigger-timely">Book now</a>
 	
 	</div>
 

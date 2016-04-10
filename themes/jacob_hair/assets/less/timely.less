@@ -1,0 +1,24 @@
+#timelyContainer {
+	display: none;
+	position: relative;
+	margin-top: 8px;
+	> a {
+		visibility: hidden;
+	}
+	> a > img {
+		opacity: 0;
+	}
+
+	header.is-compact &,
+	header.is-nav-expand & {
+	}
+}
+
+
+#topTimely {
+	position: absolute;
+	z-index: @zindex-navbar;
+	background-color: @colour-primary;
+	color: #fff;
+	text-align: center;
+}
