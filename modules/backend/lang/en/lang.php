@@ -125,6 +125,7 @@ return [
         'missing_column' => 'There are no column definitions for :columns.',
         'missing_columns' => 'List used in :class has no list columns defined.',
         'missing_definition' => "List behavior does not contain a column for ':field'.",
+        'missing_parent_definition' => "List behavior does not contain a definition for ':definition'.",
         'behavior_not_ready' => 'List behavior has not been initialized, check that you have called makeLists() in your controller.',
         'invalid_column_datetime' => "Column value ':column' is not a DateTime object, are you missing a \$dates reference in the Model?",
         'pagination' => 'Displayed records: :from-:to of :total',
@@ -178,6 +179,8 @@ return [
         'saving_name' => 'Saving :name...',
         'delete' => 'Delete',
         'deleting' => 'Deleting...',
+        'confirm_delete' => 'Do you really want to delete this record?',
+        'confirm_delete_multiple' => 'Do you really want to delete the selected records?',
         'deleting_name' => 'Deleting :name...',
         'reset_default' => 'Reset to default',
         'resetting' => 'Resetting',
@@ -206,7 +209,8 @@ return [
         'insert_row_below' => 'Insert Row Below',
         'delete_row' => 'Delete Row',
         'concurrency_file_changed_title' => 'File was changed',
-        'concurrency_file_changed_description' => "The file you're editing has been changed on disk by another user. You can either reload the file and lose your changes or override the file on the disk."
+        'concurrency_file_changed_description' => "The file you're editing has been changed on disk by another user. You can either reload the file and lose your changes or override the file on the disk.",
+        'return_to_list' => 'Return to the list'
     ],
     'recordfinder' => [
         'find_record' => 'Find Record'
@@ -366,5 +370,7 @@ return [
         'export_progress' => 'Export progress',
         'export_error' => 'Export error',
         'column_preview' => 'Column preview',
+        'file_not_found_error' => 'File not found',
+        'empty_error' => 'There was no data supplied to export',
     ],
 ];
