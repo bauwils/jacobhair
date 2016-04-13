@@ -38,6 +38,88 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-#gradient .vertical(@start-color: fade(#000000, 50%); @end-color: fade(#000000,0%); @start-percent: 0%; @end-percent: 100%);
+	#gradient .vertical(@start-color: fade(#000000, 50%); @end-color: fade(#000000,0%); @start-percent: 0%; @end-percent: 100%);
+}
 
+// Navbar Toggle
+.navbar-toggle {
+	position: fixed;
+	margin-top: 10px; margin-bottom: 10px;
+	top: 0; right: 0;
+	z-index: @zindex-navbar;
+	background-color: transparent;
+	.icon-bar {
+		background-color: @colour-secondary;
+	}
+}
+
+header {
+	@media (max-width: @screen-xs-max) {
+		position: fixed;
+		background-color: #fff;
+		height: 55px; width: 100%;
+		z-index: 99;
+	}
+}
+
+//
+// Compact
+// ------------------
+header.is-compact {
+	position: fixed;
+	background-color: #fff;
+	height: 55px; width: 100%;
+	z-index: 99;
+	.navbar-gradient{
+		display: none;
+	}
+	#topNav {
+		display: none;
+	}
+	.nav.navbar-absolute {
+		display: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+}
+
+header.is-nav-expand {
+	position: fixed;
+	background-color: #fff;
+	width: 100vw; height: 100vh;
+	z-index: @zindex-modal;
+	.navbar-gradient{
+		display: none;
+	}
+	#toggleMobileNav {
+		z-index: @zindex-modal + 1;
+		display: block;
+	}
+	#topNav {
+		display: block;
+		.nav.navbar-absolute {
+			position: absolute;
+			display: block;
+			background-color: #fff;
+			z-index: @zindex-navbar-fixed;
+			width: 100%;
+			top: 50%; left: 0;
+			margin: 0; padding: 0;
+			.translate(0; -50%);
+			> li {
+				display: block;
+				> a {
+					color: @colour-primary;
+					border-bottom: 3px solid transparent;
+					transition: color 200ms ease, border 200ms ease;
+				}
+				> a:hover{
+					color: @colour-secondary;
+					border-bottom: 3px solid @colour-secondary;
+				}
+
+			}
+		}
+	}
 }

@@ -1,9 +1,10 @@
-1457263504s:3545:"a:6:{s:5:"mtime";i:1457262896;s:7:"content";s:1698:"==
+1457856168s:5279:"a:6:{s:5:"mtime";i:1457855557;s:7:"content";s:2565:"==
 <?php
 use Jofry\Fields\PageFields;
 function onStart()
 {
     PageFields::instance()->addValuesToPage($this);
+   	//$this['tiles'] = with(new App\TileMaker($this))->all();
 }
 ?>
 ==
@@ -17,20 +18,36 @@ function onStart()
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
+	<div id="timelyContainer">
+		<script id="timelyScript" src="https://book.gettimely.com/widget/book-button.js"></script>
+		<script>var timelyButton = new timelyButton("jacobshairbeauty1", { style : "dark" });</script>
+		
+	</div>
 	<header>
 		<nav>
 		  <div class="container-fluid">
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    	<button type="button" class="navbar-toggle collapsed" id="toggleMobileNav">
+	    	  <span class="sr-only">Toggle navigation</span>
+	    	  <span class="icon-bar"></span>
+	    	  <span class="icon-bar"></span>
+	    	  <span class="icon-bar"></span>
+	    	</button>
+	    	<div id="topTimely">
+	    		<button type="button" 
+					class="btn btn-primary js-trigger-timely"
+	    		>Book Now</button>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="topNav">
 		    <div class="navbar-gradient">
 		    	
 		    </div>
-		      <ul class="nav navbar-nav navbar-absolute">
-		        <li><a href="#about">about</a></li>
-		        <li><a href="#pricing">pricing</a></li>
-		        <li><a href="#portfolio">portfolio</a></li>
-		        <li><a href="#contact">contact</a></li>
-		      </ul>
+				<ul class="nav navbar-nav navbar-absolute">
+					<li><a href="#about">about</a></li>
+					<li><a href="#pricing">pricing</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
@@ -59,15 +76,20 @@ function onStart()
 
 	</main>
 
+	<script src="/themes/jacob_hair/assets/vendor/jquery.js"></script>
+	<script src="/themes/jacob_hair/assets/js/dist/vendor.min.js"></script>
+	<script src="/themes/jacob_hair/assets/js/dist/main.min.js"></script>
+
 	<script src="http://localhost:35729/livereload.js"></script>
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";s:105:"
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";s:167:"
 use Jofry\Fields\PageFields;
 function onStart()
 {
     PageFields::instance()->addValuesToPage($this);
+   	//$this['tiles'] = with(new App\TileMaker($this))->all();
 }
-";s:6:"markup";s:1579:"<!DOCTYPE html>
+";s:6:"markup";s:2384:"<!DOCTYPE html>
 <html>
 <head>
 	<title>Jacob's Hair</title>
@@ -77,20 +99,36 @@ function onStart()
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
+	<div id="timelyContainer">
+		<script id="timelyScript" src="https://book.gettimely.com/widget/book-button.js"></script>
+		<script>var timelyButton = new timelyButton("jacobshairbeauty1", { style : "dark" });</script>
+		
+	</div>
 	<header>
 		<nav>
 		  <div class="container-fluid">
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    	<button type="button" class="navbar-toggle collapsed" id="toggleMobileNav">
+	    	  <span class="sr-only">Toggle navigation</span>
+	    	  <span class="icon-bar"></span>
+	    	  <span class="icon-bar"></span>
+	    	  <span class="icon-bar"></span>
+	    	</button>
+	    	<div id="topTimely">
+	    		<button type="button" 
+					class="btn btn-primary js-trigger-timely"
+	    		>Book Now</button>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="topNav">
 		    <div class="navbar-gradient">
 		    	
 		    </div>
-		      <ul class="nav navbar-nav navbar-absolute">
-		        <li><a href="#about">about</a></li>
-		        <li><a href="#pricing">pricing</a></li>
-		        <li><a href="#portfolio">portfolio</a></li>
-		        <li><a href="#contact">contact</a></li>
-		      </ul>
+				<ul class="nav navbar-nav navbar-absolute">
+					<li><a href="#about">about</a></li>
+					<li><a href="#pricing">pricing</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
@@ -118,6 +156,10 @@ function onStart()
 		</section>
 
 	</main>
+
+	<script src="/themes/jacob_hair/assets/vendor/jquery.js"></script>
+	<script src="/themes/jacob_hair/assets/js/dist/vendor.min.js"></script>
+	<script src="/themes/jacob_hair/assets/js/dist/main.min.js"></script>
 
 	<script src="http://localhost:35729/livereload.js"></script>
 </body>
