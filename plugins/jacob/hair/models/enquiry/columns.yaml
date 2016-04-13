@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Name
+        searchable: true
+        type: text
+    email: 
+        label: Email
+        searchable: true
+        type: text
+    phone: 
+        label: Phone
+        searchable: true
+        type: text
+    comment:
+        label: Comment
+        type: text

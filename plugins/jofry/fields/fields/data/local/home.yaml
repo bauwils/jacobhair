@@ -5,6 +5,8 @@ sliders:
     2:
         title: '123123'
         subtitle: '123'
+pricing_title: ''
+pricing_desc: ''
 haircut_tiles:
     1:
         photo: /photo-1423001474131-3a304c588136.jpeg

@@ -27,12 +27,12 @@ function onStart()
 		    <div class="navbar-gradient">
 		    	
 		    </div>
-		      <ul class="nav navbar-nav navbar-absolute">
-		        <li><a href="#about">about</a></li>
-		        <li><a href="#pricing">pricing</a></li>
-		        <li><a href="#portfolio">portfolio</a></li>
-		        <li><a href="#contact">contact</a></li>
-		      </ul>
+				<ul class="nav navbar-nav navbar-absolute">
+					<li><a href="#about">about</a></li>
+					<li><a href="#pricing">pricing</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
@@ -61,6 +61,18 @@ function onStart()
 
 	</main>
 
+	<div id="siteFlash">
+	    {% partial "flash" %}
+	</div>
+
 	<script src="http://localhost:35729/livereload.js"></script>
+
+	<script src="{{ [
+	    '@jquery',
+	    '@framework',
+	    '@framework.extras',
+	    'assets/js/dist/main.min.js'
+	] | theme}} }}"></script>
+
 </body>
 </html>

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Enquiry
+
+# Model Form Field configuration
+form: $/jacob/hair/models/enquiry/fields.yaml
+
+# Model Class name
+modelClass: Jacob\Hair\Models\Enquiry
+
+# Default redirect location
+defaultRedirect: jacob/hair/enquiries
+
+# Create page
+create:
+    title: Create Enquiry
+    redirect: jacob/hair/enquiries/update/:id
+    redirectClose: jacob/hair/enquiries
+
+# Update page
+update:
+    title: Edit Enquiry
+    redirect: jacob/hair/enquiries
+    redirectClose: jacob/hair/enquiries
+
+# Preview page
+preview:
+    title: Preview Enquiry
