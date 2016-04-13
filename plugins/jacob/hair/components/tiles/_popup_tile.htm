@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="popup">&times;</button>
+    <h4 class="modal-title">{{tile.title}}</h4>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-6">
+            {% if tile.title == 'empty' %}
+            <img src="//placehold.it/400x400/eaeaea/fff?text=Jacob's" alt="" class="img-responsive center-block">
+            {% else %}
+            <img src="{{ tile.photo|media }}" alt="" class="img-responsive center-block">
+            {% endif %}
+        </div>
+        <div class="col-sm-6">
+            {{tile.description|md}}
+        </div>
+    </div>
+</div>

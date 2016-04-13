@@ -27,6 +27,13 @@ class EnquiryForm extends ComponentBase
 
         \Flash::success('Thank you for your enquiry!');
 
+        \Mail::send('jacob.hair::mail.enquiry', [
+            'enquiry' => $enquiry
+        ], function($message) use ($enquiry)
+        {
+            $message->to('jofry@trueagency.com.au');
+        });
+
         return [
             '#siteFlash' => $this->renderPartial('flash')
         ];

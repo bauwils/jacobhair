@@ -2,6 +2,7 @@
 
 use Backend;
 use Jacob\Hair\Components\EnquiryForm;
+use Jacob\Hair\Components\Tiles;
 use System\Classes\PluginBase;
 
 /**
@@ -25,6 +26,15 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerMarkupTags()
+    {
+        return [
+            'filters' => [
+                'thumb' => [$this, 'thumb']
+            ]
+        ];
+    }
+
     /**
      * Registers any front-end components implemented in this plugin.
      *
@@ -34,6 +44,7 @@ class Plugin extends PluginBase
     {
         return [
             EnquiryForm::class => 'enquiry',
+            Tiles::class => 'tiles',
         ];
     }
 
@@ -45,6 +56,18 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
+        ];
+    }
+
+    /**
+     * Register mail templates
+     *
+     * @return array
+     */
+    public function registerMailTemplates()
+    {
+        return [
+            'jacob.hair::mail.enquiry'    => 'Enquiry email',
         ];
     }
 
@@ -64,6 +87,11 @@ class Plugin extends PluginBase
                 'order'       => 500,
             ],
         ];
+    }
+
+    public function thumb($img, $width, $height)
+    {
+        return Classes\Thumb::make($img, $width, $height);
     }
 
 }

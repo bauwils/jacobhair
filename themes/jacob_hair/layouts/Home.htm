@@ -3,8 +3,8 @@
 use Jofry\Fields\PageFields;
 function onStart()
 {
-    PageFields::instance()->addValuesToPage($this);
-   	//$this['tiles'] = with(new App\TileMaker($this))->all();
+    // PageFields::instance()->addValuesToPage($this);
+   	$this['tiles'] = with(new App\TileMaker($this))->all();
 }
 ?>
 ==

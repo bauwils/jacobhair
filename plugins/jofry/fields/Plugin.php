@@ -158,6 +158,11 @@ class Plugin extends PluginBase
             $this->pageFields->saveValues($template);
 
         });
+
+        Event::listen('cms.page.beforeDisplay', function($controller, $url, $page)
+        {
+            $this->pageFields->addValuesToPage($page);
+        });
     }
 
     /**

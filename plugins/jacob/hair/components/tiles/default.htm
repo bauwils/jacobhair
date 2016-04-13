@@ -1,0 +1,30 @@
+<div class="tiles" id="tilesMain">
+    <div class="tiles-inner">
+        {% for column in __SELF__.tiles %}
+        <div class="tile-column">
+            {% for key, tile in column %}
+            <a href="javascript:;" class="tile"
+                {% if tile.title != 'empty' %}
+                data-control="popup"
+                data-request-data=" 'id': '{{key}}'"
+                data-handler="{{ __SELF__~'::onShowPopup' }}"
+                {% endif %}
+            >
+                <div class="tile-img">
+                    {% if tile.title == 'empty' %}
+                    <img src="//placehold.it/400x400/eaeaea/fff?text=Jacob's" alt="" class="img-responsive center-block">
+                    {% else %}
+                    <img src="{{ tile.photo|thumb(480, 480) }}" alt="" class="img-responsive center-block">
+                    {% endif %}
+                </div>
+                <div class="tile-content">
+                    
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="scroll-marker"></div>
+

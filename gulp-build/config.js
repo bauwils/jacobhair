@@ -43,8 +43,16 @@ var config = {
     },
     uglify : {
         app : [
+            asset_path + "vendor/bootstrap/js/tooltip.js",
+            asset_path + "vendor/bootstrap/js/*.js",
 
+            storm_path + 'vendor/modernizr/modernizr.js',
+            storm_path + 'vendor/mousewheel/mousewheel.js',
+            storm_path + 'js/foundation.baseclass.js',
+            storm_path + 'js/foundation.controlutils.js',
             storm_path + 'js/flashmessage.js',
+            storm_path + 'js/drag.scroll.js',
+            storm_path + 'js/popup.js',
 
             asset_path + "js/ui/*.js",
             asset_path + "js/init.js",
@@ -74,7 +82,8 @@ var config = {
         ],
         scripts : [
             asset_path + 'js/partials/*.js', 
-            asset_path + 'js/init.js'
+            asset_path + 'js/init.js',
+            asset_path + 'js/routes.js'
         ],
         vendor_scripts : [
             asset_path + 'vendor/**/js/*.js'

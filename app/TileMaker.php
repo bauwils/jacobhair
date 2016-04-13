@@ -9,11 +9,14 @@ class TileMaker
 
     protected $mixedTiles = [];
 
-    public function __construct($cmsPage)
+    public function __construct($cmsPage = null)
     {
-        $this->haircutTiles = $cmsPage->page->settings['haircut_tiles'];
-        $this->productTiles = $cmsPage->page->settings['product_tiles'];
-
+        if (!$cmsPage) {
+            // Retrieve page instance from controller
+            $cmsPage = \Cms\Classes\Controller::getController()->getPage();
+        }
+        $this->haircutTiles = $cmsPage->settings['haircut_tiles'];
+        $this->productTiles = $cmsPage->settings['product_tiles'];
     }
 
     public function all()
@@ -27,6 +30,11 @@ class TileMaker
         return $this->mixedTiles;
     }
 
+    public function allChunked()
+    {
+        return array_chunk($this->all(), 2, true);
+    }
+
     public function isEmpty()
     {
         return (count($this->haircutTiles) + count($this->productTiles)) <= 0;
@@ -38,15 +46,19 @@ class TileMaker
         $tilesTwo  = $this->productTiles;
         $result = [];
 
+        $idx = 1;
+
         while ((count($tilesOne) + count($tilesTwo)) > 0) {
 
-            $result[] = count($tilesOne) > 0
+            $result['tile_one_' . $idx] = count($tilesOne) > 0
                 ? array_shift($tilesOne)
                 : $this->makeEmptyTile();
 
-            $result[] = count($tilesTwo) > 0
+            $result['tile_two_' . $idx] = count($tilesTwo) > 0
                 ? array_shift($tilesTwo)
                 : $this->makeEmptyTile();
+
+            $idx++;
         }
 
         return $result;

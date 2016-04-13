@@ -9,19 +9,55 @@ pricing_title: ''
 pricing_desc: ''
 haircut_tiles:
     1:
-        photo: /photo-1423001474131-3a304c588136.jpeg
+        photo: /haircut/2-princess-like-long-curly-hairstyle.jpg
         title: 'Haircut One'
-        description: 'Haircut One'
+        description: "# Haircut One\r\n"
     2:
-        photo: /photo-1445281835511-e2dd35fb0142.jpeg
+        photo: /haircut/24331813-Fringe-Hairstyle-Beauty-Girl-with-short-Hair-Stock-Photo-woman.jpg
         title: 'Haircut Two'
         description: 'Haircut Two'
+    3:
+        photo: /haircut/35-Cute-Short-Hairstyles-for-Women-15.jpg
+        title: asdfasdf
+        description: asdasd
+    4:
+        photo: /haircut/a98480df2325b5552e4871f9d4930ed2.jpg
+        title: 'Emma Stone'
+        description: "# Favourite hairstyle!\r\n\r\n\r\n## Heading two over here.\r\n\r\nSomething here.\r\n\r\n[CLick here to get coupon to do Emma Stone](http://emmastone.com)"
+    5:
+        photo: /haircut/Elegant-Short-Hairstyle-for-Older-Women-with-Curls-500x333-1446641178.jpg
+        title: '123123'
+        description: '123123'
+    6:
+        photo: /haircut/Messy-Medium-Hairstyle-with-Waves-500x333-1453233184-1.jpg
+        title: '13123'
+        description: asdfasdf
+    7:
+        photo: /haircut/new-hairstyle.jpg
+        title: asdfsafa
+        description: asdfasfasdf
 product_tiles:
     1:
-        photo: /photo-1445451983996-ac6b92ffb1fb.jpeg
+        photo: /products/hair-products-for-men_1424572210.jpg
         title: 'Product One'
         description: 'Product One'
     2:
-        photo: /photo-1452251889946-8ff5ea7b27ab.jpeg
+        photo: /products/hair-products-for-men_1429035784.jpg
         title: 'Product Two'
         description: 'Product Two'
+    3:
+        photo: /products/mens-hairstyles-products-high-quality-hair-clipper.jpg
+        title: asdasd
+        description: asdad
+    4:
+        photo: /products/Slider_1_-_A_Beginner_s_Guide_To_Texturizing_Products.jpeg
+        title: asd
+        description: asdasd
+    5:
+        photo: /products/Slider_3_-_A_Beginner_s_Guide_To_Texturizing_Products.jpeg
+        title: Texture
+        description: adsfasdfasdf
+    6:
+        photo: /products/the-best-men-s-hair-products_1423868603.jpg
+        title: Cologne
+        description: asdfasfasdfasdf

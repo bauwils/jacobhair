@@ -1,8 +1,9 @@
 <?php 
 namespace Jofry\Fields;
-use Yaml;
-use Request;
+use Cms\Classes\Page;
 use Log;
+use Request;
+use Yaml;
 /**
  * Page Fields
  */
@@ -232,17 +233,25 @@ class PageFields
      */
     public function addValuesToPage($app)
     {
-        $filename = $this->getTemplateFilename($app->page->filename);
+        $page = null;
+
+        if (!$app) {
+            return;
+        }
+
+        if ($app instanceof Page) {
+            $page = $app;
+        } else if ($app->page) {
+            $page = $app->page;
+        } else {
+            return;
+        }
+
+        $filename = $this->getTemplateFilename($page->filename);
         $values = $this->getValues($filename);
-
-//        echo '<pre>';
-//         var_dump($values);
-//         echo '</pre>';
-//         die;
-
         
         foreach($values as $name => $value) {
-            $app->page->settings[$name] = $value;
+            $page->settings[$name] = $value;
         }
     }
 }
