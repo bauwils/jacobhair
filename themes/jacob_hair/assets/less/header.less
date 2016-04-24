@@ -6,8 +6,9 @@
 	float: none;
 	top: 0;
     left: 0%;
+    z-index: @zindex-navbar;
     //transform: translate(-50%,0);
-	
+
 	> li {
 		float: none;
 		padding: 20px 40px 20px 40px;
@@ -38,7 +39,27 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	z-index: (@zindex-navbar - 1);
 	#gradient .vertical(@start-color: fade(#000000, 50%); @end-color: fade(#000000,0%); @start-percent: 0%; @end-percent: 100%);
+}
+
+.navbar-brand {
+	position: absolute;
+	margin-top: 10px;
+	padding-top: 0; padding-bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+	> img {
+		max-height: 35px;
+		.img-responsive;
+	}
+	@media (min-width: @screen-md-min) {
+		display: none;
+	}
+
+	.is-compact & {
+		display: block;
+	}
 }
 
 // Navbar Toggle

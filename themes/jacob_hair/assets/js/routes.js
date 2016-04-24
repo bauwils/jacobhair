@@ -22,10 +22,13 @@
             $(window).on('resize', onResize)
             onResize()
 
-
+            $('section.homebanner').slick({
+            	dots: true,
+            	arrows: false
+            });
 
         }
-        
+
     };
 
 })(window, jQuery, App);

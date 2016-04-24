@@ -13,14 +13,25 @@
 	header.is-nav-expand & {
 	}
 }
-
-
 #topTimely {
 	position: absolute;
 	z-index: @zindex-navbar;
-	background-color: @colour-primary;
-	color: #fff;
-	text-align: center;
-	visibility: hidden;
-	opacity: 0;
+	margin-top: 12px;
+
+	> .btn.btn-primary {
+		border-color: @colour-secondary;
+		background-color: transparent;
+		color: @colour-secondary;
+		text-align: center;
+		border-radius: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-bottom: 3px;
+	}
+	@media (min-width: @screen-md-min) {
+		display: none;
+	}
+	header.is-compact & {
+		display: block;
+	}
 }

@@ -53,6 +53,7 @@ var config = {
             storm_path + 'js/flashmessage.js',
             storm_path + 'js/drag.scroll.js',
             storm_path + 'js/popup.js',
+            asset_path + 'vendor/slick/js/*.js',
 
             asset_path + "js/ui/*.js",
             asset_path + "js/init.js",
@@ -73,7 +74,7 @@ var config = {
         less : {
             theme: [
                 asset_path + 'less/theme.less',
-                asset_path + 'less/**/*.less', 
+                asset_path + 'less/**/*.less',
                 asset_path + 'vendor/*/less/**/*.less'
             ]
         },
@@ -81,7 +82,7 @@ var config = {
             asset_path + 'vendor/**/css/*.css'
         ],
         scripts : [
-            asset_path + 'js/partials/*.js', 
+            asset_path + 'js/partials/*.js',
             asset_path + 'js/init.js',
             asset_path + 'js/routes.js'
         ],

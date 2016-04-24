@@ -22,7 +22,7 @@ function onStart()
 	<div id="timelyContainer">
 		<script id="timelyScript" src="https://book.gettimely.com/widget/book-button.js"></script>
 		<script>var timelyButton = new timelyButton("jacobshairbeauty1", { style : "dark" });</script>
-		
+
 	</div>
 	<header>
 		<nav>
@@ -35,14 +35,17 @@ function onStart()
 	    	  <span class="icon-bar"></span>
 	    	</button>
 	    	<div id="topTimely">
-	    		<button type="button" 
+	    		<button type="button"
 					class="btn btn-primary js-trigger-timely"
 	    		>Book Now</button>
 	    	</div>
+	    	<!-- <div class="navbar-brand">
+	    		<img src="{{ 'assets/img/jacob-nav-logo.png'|theme }}" alt="Jacob's hair & beauty">
+	    	</div> -->
 		    <div class="collapse navbar-collapse" id="topNav">
-		    <div class="navbar-gradient">
-		    	
-		    </div>
+			    <div class="navbar-gradient">
+
+			    </div>
 				<ul class="nav navbar-nav navbar-absolute">
 					<li><a href="#about">about</a></li>
 					<li><a href="#pricing">pricing</a></li>
@@ -89,6 +92,36 @@ function onStart()
 	    '@framework.extras',
 	    'assets/js/dist/main.min.js'
 	] | theme}} }}"></script>
+
+	{% if this.theme.show_popup %}
+
+	<div class="modal fade" tabindex="-1" role="dialog" id="homePopup">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">{{this.theme.popup_heading}}</h4>
+	      </div>
+	      <div class="modal-body">
+
+			{{ this.theme.popup_text|md }}
+
+			<br>
+
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<script>
+	(function ($) {
+		$(document).ready(function () {
+			$('#homePopup').modal('show');
+		})
+	})(jQuery)
+	</script>
+
+	{% endif %}
 
 </body>
 </html>

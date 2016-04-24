@@ -1,5 +1,18 @@
-name: jacob_hair
+name: Jacob Hair
 description: ''
 author: bauwils
 homepage: ''
 code: ''
+
+form:
+    fields:
+        show_popup:
+            type: switch
+            label: Show Popup
+        popup_heading:
+            type: text
+            label: Popup Heading
+        popup_text:
+            type: markdown
+            size: small
+            label: Popup content
